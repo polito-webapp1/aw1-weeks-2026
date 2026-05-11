@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button, Container, Navbar } from 'react-bootstrap';
+import { Button, Container, Navbar } from "react-bootstrap";
 import { Link } from "react-router";
 import { LogoutButton } from "./AuthComponents.jsx";
 

@@ -51,7 +51,7 @@ app.use(passport.authenticate("session"));
 const corsOptions = {
   origin: "http://localhost:5173",
   optionsSuccessState: 200,
-  exposedHeaders: ['WWW-Authenticate'],
+  exposedHeaders: ["WWW-Authenticate"],
   credentials: true
 };
 

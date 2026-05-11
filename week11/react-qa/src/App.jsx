@@ -66,7 +66,7 @@ function App() {
           <Route path="answers/new" element={loggedIn ? <AnswerForm addAnswer={true} user={user} /> : <Navigate replace to="/" />}></Route>
           <Route path="answers/:answerId/edit" element={loggedIn ? <EditAnswerForm editAnswer={true} user={user} /> : <Navigate replace to="/" />}></Route>
         </Route>
-        <Route path='/login' element={loggedIn ? <Navigate replace to='/' /> : <LoginForm handleLogin={handleLogin} />} />
+        <Route path="/login" element={loggedIn ? <Navigate replace to="/" /> : <LoginForm handleLogin={handleLogin} />} />
         <Route path="*" element={ <NotFound /> } />
       </Route>
   </Routes>
