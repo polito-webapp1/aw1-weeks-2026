@@ -3,9 +3,11 @@
 
 ## React Client Application Routes
 
-- Route `/`: page content and purpose
-- Route `/something/:param`: page content and purpose, param specification
-- ...
+- Route `/`: main page visible before logging in
+- Route `/login`: page containing the login form
+- Route `/user/:uID`: page containing the current studyplan of a user, visible after login
+- Route `/user/:uID/studyplan`: from this page users can view and manage their own study plan
+- Route #: default page loaded when...
 
 
 ## API Server
@@ -71,14 +73,16 @@
       ...
     ]
   }
-
-- POST `/api/something`
-  - request parameters and request body content
-  - response body content
-- POST `/api/something`
-  - request parameters and request body content
-  - response body content
-- ...
+- POST `/api/sessions`
+  - ...
+- DELETE `/api/sessions/current`
+  - ...
+- PUT `/api/users/:uID/studyplans/time`
+  - ...
+- POST `/api/users/:uID/studyplans`
+  - ...
+- DELETE `/api/users/:uID/studyplans`
+  - ...
 
 ## Database Tables
 
@@ -89,11 +93,10 @@
 
 ## Main React Components
 
-- `ListOfSomething` (in `List.js`): component purpose and main functionality
-- `GreatButton` (in `GreatButton.js`): component purpose and main functionality
+- `LoginForm` (in `AuthComponent.jsx`): shows a form for ...
+- `CourseTable` (in `CourseTable.jsx`): shows list of all courses if ... or list of courses in studyplan if ...
+- `MyNavbar` (in `MyNavbar.jsx`): shows ...
 - ...
-
-(only _main_ components, minor ones may be skipped)
 
 ## Screenshot
 
